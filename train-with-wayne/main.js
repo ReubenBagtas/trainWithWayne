@@ -1,22 +1,27 @@
+const electron = require('electron');
 const {
   app,
   BrowserWindow
-} = require('electron');
+} = electron;
 
 let win;
 
 function createWindow() {
 
-  win = new BrowserWindow({
-    width: 600,
-    height: 600,
-    backgroundColor: '#ffffff',
-  })
+  // win = new BrowserWindow({
+  //   width: 600,
+  //   height: 600,
+  //   backgroundColor: '#ffffff',
+  // })
+
+  // fit to screen size
+  const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize
+    win = new BrowserWindow({width, height})
 
   win.loadURL(`file://${__dirname}/dist/train-with-wayne/index.html`)
 
   //chrome dev tools
-  win.webContents.openDevTools()
+  // win.webContents.openDevTools()
 
   win.on('closed', function () {
     win = null;

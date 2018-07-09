@@ -1,0 +1,50 @@
+#holder {
+  display:grid;
+  height:100vh;
+
+  header {
+    background-color:rgba(31, 30, 30, 0.856);
+    color:white;
+    font-family: cursive;
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  #info{
+    background-color:rgba(70, 69, 69, 0.733);
+    grid-column: 1/4;
+    grid-row: 2/7;
+    table {
+
+    }
+    #moreDetail{}
+  }
+
+  #graphBox{
+    grid-column: 2/3;
+    grid-row:6/9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:2%;
+    background-color:white;
+    
+
+    .graphBox-column {
+      width:30vw;
+      background-color:rgba(128, 128, 128, 0.705);
+      margin:1%;
+    }
+  }
+
+  footer {
+    grid-row:9/10;
+    grid-column: 1/4; 
+    background-color:rgba(31, 30, 30, 0.856);
+
+  }
+
+
+
+
+
+}
