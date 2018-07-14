@@ -1,50 +1,52 @@
 #holder {
-  display:grid;
-  height:100vh;
-
-  header {
-    background-color:rgba(31, 30, 30, 0.856);
-    color:white;
-    font-family: cursive;
-    grid-column: 1/4;
-    grid-row: 1/2;
-  }
-
-  #info{
-    background-color:rgba(70, 69, 69, 0.733);
-    grid-column: 1/4;
-    grid-row: 2/7;
-    table {
-
+  display: grid;
+  width: 100%;
+  height: 150vh;
+  background-color: white;
+  #info {
+    background: url(../../../assets/images/main/dashboard/info.jpg) no-repeat center;
+    background-size: cover;
+    grid-column: 1/11;
+    grid-row: 1/8;
+    #filler {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(127, 255, 212, 0.616);
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      #table {
+        color: white;
+        grid-column: 2/3;
+        grid-row: 2/3;
+        border: 1px solid white;
+        font-weight: 100;
+      }
+      #moreDetail {
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
     }
-    #moreDetail{}
   }
-
-  #graphBox{
-    grid-column: 2/3;
-    grid-row:6/9;
+  #graphBox {
+    grid-column: 3/9;
+    grid-row: 7/9;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding:2%;
-    background-color:white;
-    
-
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10%;
+    background-color: #bbb9b9;
+    z-index: 1;
+    height: 120%;
     .graphBox-column {
-      width:30vw;
-      background-color:rgba(128, 128, 128, 0.705);
-      margin:1%;
+      width: 80%;
+      height: 70%;
+      background-color: rgb(247, 247, 247);
+      margin: 5% 1% 0% 1%;
     }
   }
-
   footer {
-    grid-row:9/10;
-    grid-column: 1/4; 
-    background-color:rgba(31, 30, 30, 0.856);
-
+    grid-row: 11/12;
+    grid-column: 1/11;
+    background-color: rgba(31, 30, 30, 0.856);
   }
-
-
-
-
-
 }

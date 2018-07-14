@@ -9,23 +9,22 @@ import { RegisterPageComponent } from './main/register-page/register-page.compon
 import { DashboardPageComponent } from './main/dashboard-page/dashboard-page.component';
 import { LoginPageComponent } from './main/login-page/login-page.component';
 import { WeightBarComponent } from './components/charts/weigth-bar/weight-bar.component';
+import { PushUpsLineGraphComponent } from './components/charts/push-ups-line-graph/push-ups-line-graph.component';
+import { BodyPolarAreaComponent } from './components/charts/body-polar-area/body-polar-area.component';
 
 @NgModule({
   declarations: [
-    AppComponent, 
-    LandingPageComponent, 
-    RegisterPageComponent, 
-    DashboardPageComponent, 
+    AppComponent,
+    LandingPageComponent,
+    RegisterPageComponent,
+    DashboardPageComponent,
     LoginPageComponent,
-    WeightBarComponent
-    
+    WeightBarComponent,
+    PushUpsLineGraphComponent,
+    BodyPolarAreaComponent
   ],
-  imports: [
-    BrowserModule, 
-    AppRoutingModule, 
-    ChartsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, ChartsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
